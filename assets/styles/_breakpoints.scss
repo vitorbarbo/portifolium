@@ -1,0 +1,40 @@
+$screen-sm: 576px;
+$screen-md: 767px;
+$screen-ml: 1024px;
+$screen-xl: 1200px;
+$screen-xxl: 1350px;
+
+// Mobile interfaces
+@mixin small {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+// Tablets interfaces
+@mixin medium {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// Small desktop interfaces
+@mixin m-large {
+  @media (max-width: #{$screen-ml}) {
+    @content;
+  }
+}
+
+// Medium desktop interfaces
+@mixin xl-large {
+  @media (max-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+// Large desktop interfaces
+@mixin xxl-large {
+  @media (max-width: #{$screen-xxl}) {
+    @content;
+  }
+}

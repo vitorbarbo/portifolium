@@ -1,0 +1,380 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/content.component.css" />
+  </head>
+  <body>
+    <div id="header" class="header">
+      <div class="header__images">
+        <a href="https://github.com/vitorbarbo" target="_blank">
+          <img src="/assets/icons/github.png" alt="" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/vitor-barbosa-a06394206/"
+          target="_blank"
+        >
+          <img src="/assets/icons/linkedin.png" alt="" />
+        </a>
+        <a
+          href="https://wa.me/5519996637468?text=Hi!%20I'm%20interested%20in%20your%20work%20"
+          target="_blank"
+        >
+          <img src="/assets/icons/whatsapp.png" alt="" />
+        </a>
+        <a href="mailto:vitordb91@gmail.com" target="_blank">
+          <img src="/assets/icons/email.png" alt="" />
+        </a>
+      </div>
+      <ul class="header__list nav-menu">
+        <li class="header__list__item nav-item">
+          <a href="#" class="nav-link"> Home </a>
+        </li>
+        <li class="header__list__item nav-item">
+          <a href="#about" class="nav-link"> About </a>
+        </li>
+        <li class="header__list__item nav-item">
+          <a href="#work" class="nav-link"> Work </a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content__main">
+        <div>
+          <h1 class="content__main__title" (click)="(isMobile)">
+            Vitor Barbosa.
+          </h1>
+          <div class="content__main__img">
+            <img
+              src="/assets/images/me-art.png"
+              alt=""
+              class="content__main__img__art"
+            />
+            <img
+              class="content__main__img__regular"
+              src="/assets/images/me.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="content__main__description">
+          <div>
+            <h2>Yeap, this is me talking about myself.</h2>
+            <p>
+              <strong>Cook, musician and logic enthusiast</strong>, I have found
+              a way to combine <strong>precision</strong> and
+              <strong>creativity</strong> throughout the lines of coding, and I
+              love seeing the results of my efforts by users experience. Now, I
+              am a <strong>hard-working web developer</strong> with a flair for
+              creating solutions in the least amount of time, having contributed
+              in the development of <strong>ecommerce </strong>platforms,
+              <strong>financial </strong>integrated systems and created many
+              <strong>responsive websites and landing pages</strong>.
+
+              <!-- Hard-working web developer with a flair for creating solutions in the least amount of time, having contributed in the development of ecommerce platforms and created many responsive websites and landing pages. -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="content__about">
+        <div>
+          <h3>Main skills:</h3>
+          <div class="content__about__skills" *ngFor="let s of skills">
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="excel"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="excel"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="advanced"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="advanced"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="advanced"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="advanced"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="intermediate"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="intermediate"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="intermediate"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Languages:</h3>
+          <div class="content__about__skills">
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="/assets/flags/Brazil.png"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="excel"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="/assets/flags/spain.png"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="intermediate"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="content__about__skills__skill"
+                src="/assets/flags/usa.png"
+                alt=""
+              />
+              <div class="code-bar">
+                <img
+                  class="excel"
+                  src="/assets/icons/coding-badge.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="work" class="content__work">
+        <div class="section">
+          <button class="collapsible">
+            <img src="/assets/icons/plus.png" alt="" />
+            <h2>Ontop - Columbia</h2>
+            <h4>07/2022 - 10/2022</h4>
+          </button>
+          <div class="show-content">
+            <ul>
+              <li>
+                Contributed in one of the major IT projects using Angular
+                framework, along with SCSS and TS.
+              </li>
+              <li>Developing based on three main environments</li>
+              <li>Clean code and design</li>
+              <li>Reusable web-components</li>
+              <li>Applying modules, models, enumerators and services</li>
+              <li>Backend integrations throughout endpoints</li>
+              <li>Bootstrap application</li>
+              <li>Integrated testing</li>
+              <li>Bug Fixing</li>
+              <li>
+                Daily meetings to check tasks, bugs, and issues in order to
+                improve work flow and code performance
+              </li>
+              <li>Responsive Layouts</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <button class="collapsible">
+            <img src="/assets/icons/plus.png" alt="" />
+            <h2>Hausz - Brazil</h2>
+            <h4>05/2021 - 07/2022</h4>
+          </button>
+          <div class="show-content">
+            <ul>
+              <li>
+                Creation, development and management of projects from scratch in
+                the repository
+              </li>
+              <li>
+                Creation of Landing Pages and Responsive and Semantic Sites with
+                HTML, CSS and JS - on time
+              </li>
+              <li>
+                Creation and collaboration with massive projects using Angular
+                framework, as well as managing them in their respective
+                repositories
+              </li>
+              <li>
+                Collaboration in complex and integrated internal management
+                system
+              </li>
+              <li>Back End integration</li>
+              <li>Bug fixing</li>
+              <li>Code refactoring, improvement and documentation</li>
+              <li>Handling FTP tool for deploy</li>
+              <li>
+                Weekly meetings in order to improve work flow and code
+                improvement
+              </li>
+              <li>
+                Bootstrap application, as well as many other libraries along the
+                projects
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <button class="collapsible">
+            <img src="/assets/icons/plus.png" alt="" />
+            <h2>Ecosolar - Brazil</h2>
+            <h4>07/2022 - 10/2022</h4>
+          </button>
+          <div class="show-content">
+            <ul>
+              <li>Landing pages</li>
+              <li>Websites</li>
+              <li>Responsive Layouts</li>
+              <li class="uppercase">Html, css, js</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <button class="collapsible">
+            <img src="/assets/icons/plus.png" alt="" />
+            <h2>Pdca - Brazil</h2>
+            <h4>07/2022 - 10/2022</h4>
+          </button>
+          <div class="show-content">
+            <ul>
+              <li>Landing pages</li>
+              <li>Websites</li>
+              <li>Responsive Layouts</li>
+              <li class="uppercase">Html, css, js</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#header">
+        <img class="content__up" src="/assets/icons/up.png" alt="" />
+      </a>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
